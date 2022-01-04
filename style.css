@@ -39,5 +39,5 @@ img {
 }
     /* Para un item individual */
 .item2  {
-    justify-self: right !important;
+    justify-self: right;
 }
