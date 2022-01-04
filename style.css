@@ -18,11 +18,26 @@ img {
     /* -- Añade las columnas del tamaño indicado
     grid-template-columns: 100px auto 100px;
     */
-    grid-template-columns: 100px auto 100px;
-    grid-template-rows: 200px 100px 200px; 
-    column-gap: 10px;
-    row-gap: 15px;
+    grid-template-columns: 100px auto 100px; /*Ancho columna*/
+    grid-template-rows: 200px 100px 200px;   /*Alto Filas*/
+    column-gap: 15px; /*Espacio entre columnas*/
+    row-gap: 10px; /*Espacio entre filas*/
+    /* gap: 20px;   Agrega espacio entre columnas y filas por igual*/
+
+
+    /* ---- Propiedades de alineacion del contenedor ---- */
+    
+    /*Para items*/
     justify-items: center;
     align-items: center;
+    /*place-items: ; */
 
+    /* Para el contenedor */
+    justify-content: space-between;
+    align-content: space-around;
+    /*place-content: ;*/
+}
+    /* Para un item individual */
+.item2  {
+    justify-self: right !important;
 }
