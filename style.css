@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+img {
+    width: 50px;
+    height: auto;
+}
+
+.container {
+    display: grid;
+    /* -- Añade las columnas que se indiquen en 1fr
+    grid-template-columns: repeat(3, 1fr);
+    */
+    /* -- Añade las columnas definidas y se reparten los tamaños de manera equitativa 
+    grid-template-columns: 1fr 1fr 1fr;
+    */
+    /* -- Añade las columnas del tamaño indicado
+    grid-template-columns: 100px auto 100px;
+    */
+    grid-template-columns: 100px auto 100px;
+    grid-template-rows: 200px 100px 200px; 
+    column-gap: 10px;
+    row-gap: 15px;
+    justify-items: center;
+    align-items: center;
+
+}
