@@ -4,9 +4,52 @@
 }
 img {
     width: 50px;
-    height: auto;
+    height: 50px;
 }
 
 .container1 {
     display: grid;
+    grid-column: ;
+}
+
+.container3 {
+    display: grid;
+    border: 5px solid #e1bee7;
+    background-color: wheat;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 75px 75px 75px;
+    grid-template-areas: 
+        "header header header"
+        "nav main main"
+        "nav main main";
+    place-content: center;
+
+}
+
+.item_01_e3 {
+    border: 5px solid #f8bbd0;
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+}
+
+.item_02_e3 {
+    border: 5px solid #e1bee7;
+    grid-area: nav;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.item_03_e3 {
+    border: 5px solid #b2ebf2;
+    grid-area: main;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
 }
